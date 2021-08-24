@@ -1,6 +1,6 @@
 # Harvest Acres
 
-
+[Deployed Link]()
 
 ## Project Name
 
@@ -20,9 +20,13 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 ## Libraries and Dependencies
 
-| Library | Dependencies |
+| Library | Description  |
 |---------|--------------|
-|  React  |              |
+|  React  |   Frontend Javascript client for building UI/UX   |
+|  React Router  |  Library in React used for routing between views or screens      |
+|  Ruby  |  Object oriented programming language     |
+|  Ruby on Rails  |    Ruby Gem used to create backend servers and a database       |
+
 
 ## Wireframes
 
@@ -36,9 +40,32 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 ## Component Tree
 
-[Component Tree](https://whimsical.com/web-escape-hierarchy-BBTNoCb1wCAwrpDmo3SSYi)
+[Component Tree](https://whimsical.com/harvest-acres-component-hierarchy-XR1ujHqqv3ah3bQvEgBrgY)
 
 ## Component Architecture
+
+```
+
+app -> Controllers -> users_controller.rb, farms_controller.rb, posts_controller.rb, crops_controller.rb
+    |
+    -> Models -> user.rb, farm.rb, post.rb, crop.rb
+
+client -> Src -> App.js
+              |
+              |-> Views -> Farm.jsx, MessageBoard.jsx, Leaderboard.jsx
+              |
+              -> Services -> apiConfig.js, auth.js, users.js, farms.js
+              
+config -> Initializers -> cors.rb
+       |
+       -> routes.rb
+
+db -> Migrate -> migration files
+   |
+   -> schema.rb, seeds.rb
+
+
+```
 
 
 ## Timeframes
