@@ -10,23 +10,18 @@ Harvest Acres
 
 This farm-style collection game is for those who love the game HayDay. In this game, you will be able to collect crops and chat with other players. Your goal is to collect as many crops as you can to impress the other farmers! Whoever collects the most crops will stand at the top of the leaderboard.
 
-## API and Data Sample
 
-[Airtable API](https://airtable.com/tblmNSNzW1tn2IdlJ/viwZUeiriOsiwkMVo?blocks=hide)
+#### MVP
 
-The Airtable API I made will be used for the Leaderboards page. Players will be able to post their results after completing the game and will display it to everyone. Their post will include their name, time, rank, and the date of completion.
+- Have a Login/Signup
+- Let the user have a farm
+- Let the farm have crops for the user to harvest
+- Create a posting board for farmers to chat with others
 
-```json
+## Libraries and Dependencies
 
-{
-    "fields": {
-      "name": "Chris",
-      "time": 900
-    }
-  },
-
-```
-
+| Library | Dependencies |
+|---------|--------------|
 ## Wireframes
 
 [Main Page](https://wireframe.cc/9C0t7E)
@@ -37,36 +32,12 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 
 [Mobile Puzzle View](https://whimsical.com/web-escape-mobile-CDPziUMy2QeMwgYcuqMdof)
 
-## Component Hierarchy
+## Component Tree
 
-[Component Hierarchy](https://whimsical.com/web-escape-hierarchy-BBTNoCb1wCAwrpDmo3SSYi)
+[Component Tree](https://whimsical.com/web-escape-hierarchy-BBTNoCb1wCAwrpDmo3SSYi)
 
-### MVP/PostMVP
+## Component Architecture
 
-#### MVP
-
-- Have a Login/Signup
-- Let the user have a farm
-- Let the farm have crops for the user to harvest
-- Create a posting board for farmers to chat with others
-
-#### PostMVP
-
-- Have a leaderboard
-- Allow user to unlock different crops
-- Add animations for harvesting crops, posting on board
-- Have the post page as a pop-up
-- Allow users to visit other farms
-
-## Project Schedule
-
-| Day     | Deliverable                                                     | Status     |
-| ------- | --------------------------------------------------------------- | ---------- |
-| August 25 | Prepare for Project Pitch / Project Approval / Start Backend    | Complete   |
-| August 26 | Finish Backend / Start & Finish Authentication                  | Complete   |
-| August 27 | Work on Frontend and Game Functionality                         | Complete   |
-| August 30 | Finish Functionality / CSS for Appearance / PMVP                | Complete   |
-| August 31 | Presentations                                                   | Complete   |
 
 ## Timeframes
 
@@ -99,20 +70,27 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 | Final Review                                 |    H     |      1hrs      |     2hrs      |    2hrs     |
 | Total                                        |    H     |     45hrs      |     55hrs     |    55hrs    |
 
-## SWOT Analysis
 
-### Strengths:
+#### PostMVP
 
-Actual JavaScript functionality should be fairly simple. The Puzzles will not be crazy difficult to complete or code in.
+- Have a leaderboard
+- Allow user to unlock different crops
+- Add animations for harvesting crops, posting on board
+- Have the post page as a pop-up
+- Allow users to visit other farms
 
-### Weaknesses:
 
-State. I can understand what state is, just actually using it will be a bit tricky for me. I do have resources to use and hope that this project will help me understand this concept better.
+## ERD Model
+[ERD Model]()
 
-### Opportunities:
+## Code Showcase
 
-Learning React completely. I'm still a little fuzzy with React as a whole, so this project should help clear some things up. It's more of the behind the scenes syntax that throws me for a loop.
+```
+code
+```
 
-### Threats:
+## Code Issues & Resolutions
 
-The Leaderboard component. It shouldn't be the worst thing in the world, but like I said I still struggle with state a little bit, so having players be able to post on the API using state will be tough for me.
+-
+-
+-
