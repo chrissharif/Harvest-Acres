@@ -89,7 +89,7 @@ db -> Migrate -> migration files
 | Media Queries                                |    H     |      1hrs      |     hrs      |    hrs     |
 | Work on Leaderboard Component                |    M     |      2hrs      |     hrs      |    hrs     |
 | Finish Leaderboard and add Styling           |    M     |      1hrs      |    hrs     |   hrs    |
-| PMVP                                         |    M     |      5hrs      |     hrs      |    hrs     |
+| PMVP                                         |    L     |      5hrs      |     hrs      |    hrs     |
 | Finish Up Functionality + Debugging          |    H     |      4hrs      |     hrs      |    hrs     |
 | Linting                                      |    H     |      1hrs      |     hrs      |    hrs     |
 | Final Review                                 |    H     |      1hrs      |     hrs      |    hrs     |
