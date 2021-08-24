@@ -91,9 +91,10 @@ db -> Migrate -> migration files
 | Finish Leaderboard and add Styling           |    M     |      1hrs      |    hrs     |   hrs    |
 | PMVP                                         |    L     |      5hrs      |     hrs      |    hrs     |
 | Finish Up Functionality + Debugging          |    H     |      4hrs      |     hrs      |    hrs     |
+| Deployment                                  |    H     |      2hrs      |     hrs      |    hrs     |
 | Linting                                      |    H     |      1hrs      |     hrs      |    hrs     |
 | Final Review                                 |    H     |      1hrs      |     hrs      |    hrs     |
-| Total                                        |    H     |     44hrs      |     hrs     |    hrs    |
+| Total                                        |    H     |     46hrs      |     hrs     |    hrs    |
 
 
 #### PostMVP
