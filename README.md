@@ -83,7 +83,7 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 
 ## ERD Model
-[ERD Model]()
+[ERD Model](https://drive.google.com/file/d/16EXheHUGENQ3kTtG-ScM_yFyvkpP93rk/view?usp=sharing)
 
 ## Code Showcase
 
