@@ -26,7 +26,7 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 [Main Page](https://wireframe.cc/9C0t7E)
 
-[Puzzle View](https://wireframe.cc/rdemeV)
+[Farm View](https://www.figma.com/file/WLFSns8vMAbuzKXtE8srCV/Harvest-Acres-Farm-Page?node-id=0%3A1)
 
 [Leaderboards](https://wireframe.cc/dxLgbh)
 
