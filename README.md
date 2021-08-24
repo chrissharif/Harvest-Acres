@@ -30,9 +30,9 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 [Farm View](https://www.figma.com/file/WLFSns8vMAbuzKXtE8srCV/Harvest-Acres-Farm-Page?node-id=0%3A1)
 
-[Leaderboards](https://wireframe.cc/dxLgbh)
+[Message Board](https://www.figma.com/file/iOIOQ02YhAxyDKGCgB3ZiL/Harvest-Acres-Message-Board)
 
-[Mobile Puzzle View](https://whimsical.com/web-escape-mobile-CDPziUMy2QeMwgYcuqMdof)
+[Leaderboard](https://www.figma.com/file/MtNhRXYRgIf2cW4WGjHyiL/Harvest-Acres-Leaderboard)
 
 ## Component Tree
 
