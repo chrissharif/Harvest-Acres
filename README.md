@@ -22,9 +22,11 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 | Library | Dependencies |
 |---------|--------------|
+|  React  |              |
+
 ## Wireframes
 
-[Main Page](https://wireframe.cc/9C0t7E)
+[Log-in and Sign-up Page](https://www.figma.com/file/cnerAVSF1yRxY2RPWwFRNu/Harvest-Acres-Log-In)
 
 [Farm View](https://www.figma.com/file/WLFSns8vMAbuzKXtE8srCV/Harvest-Acres-Farm-Page?node-id=0%3A1)
 
