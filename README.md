@@ -87,12 +87,13 @@ db -> Migrate -> migration files
 | Make Sure Crops Work Properly                |    H     |      1hrs      |     hrs      |    hrs     |
 | CSS Styling                                  |    H     |      3hrs      |    hrs     |   hrs    |
 | Media Queries                                |    H     |      1hrs      |     hrs      |    hrs     |
-| Work on Leaderboard Component                |    H     |      2hrs      |     hrs      |    hrs     |
-| Finish Leaderboard and add Styling           |    H     |      1hrs      |    hrs     |   hrs    |
-| PMVP                                         |    H     |      5hrs      |     hrs      |    hrs     |
+| Work on Leaderboard Component                |    M     |      2hrs      |     hrs      |    hrs     |
+| Finish Leaderboard and add Styling           |    M     |      1hrs      |    hrs     |   hrs    |
+| PMVP                                         |    M     |      5hrs      |     hrs      |    hrs     |
 | Finish Up Functionality + Debugging          |    H     |      4hrs      |     hrs      |    hrs     |
+| Linting                                      |    H     |      1hrs      |     hrs      |    hrs     |
 | Final Review                                 |    H     |      1hrs      |     hrs      |    hrs     |
-| Total                                        |    H     |     43hrs      |     hrs     |    hrs    |
+| Total                                        |    H     |     44hrs      |     hrs     |    hrs    |
 
 
 #### PostMVP
