@@ -30,11 +30,17 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 ## Wireframes
 
-[Log-in and Sign-up Page](https://www.figma.com/file/cnerAVSF1yRxY2RPWwFRNu/Harvest-Acres-Log-In)
+[Sign-In](https://www.figma.com/file/cnerAVSF1yRxY2RPWwFRNu/Harvest-Acres-Sign-In)
+
+[Sign-Up](https://www.figma.com/file/aDaSsOTz76s7uKgc1RelL4/Harvest-Acres-Sign-Up)
 
 [Farm View](https://www.figma.com/file/WLFSns8vMAbuzKXtE8srCV/Harvest-Acres-Farm-Page?node-id=0%3A1)
 
 [Message Board](https://www.figma.com/file/iOIOQ02YhAxyDKGCgB3ZiL/Harvest-Acres-Message-Board)
+
+[New Post](https://www.figma.com/file/0QtYzSP3B0yRXMsjK2GDLr/Harvest-Acres-New-Post)
+
+[Edit Post](https://www.figma.com/file/RjAIuhhlk3I3HVRoFvZPUo/Harvest-Acres-Edit-Post)
 
 [Leaderboard](https://www.figma.com/file/MtNhRXYRgIf2cW4WGjHyiL/Harvest-Acres-Leaderboard)
 
