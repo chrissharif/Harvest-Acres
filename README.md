@@ -46,24 +46,25 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 ```
 
-app -> Controllers -> users_controller.rb, farms_controller.rb, posts_controller.rb, crops_controller.rb
-    |
-    -> Models -> user.rb, farm.rb, post.rb, crop.rb
-
-client -> Src -> App.js
-              |
-              |-> Views -> Farm.jsx, MessageBoard.jsx, Leaderboard.jsx
-              |
-              -> Services -> apiConfig.js, auth.js, users.js, farms.js
-              
-config -> Initializers -> cors.rb
-       |
-       -> routes.rb
-
-db -> Migrate -> migration files
-   |
-   -> schema.rb, seeds.rb
-
+src 
+|__ App.js
+    |__ Screens/ 
+         |__ EditPost/
+              |__ EditPost.jsx, EditPost.css
+         |__ Farm/
+              |__ Farm.jsx, Farm.css 
+         |__ MessageBoard/
+              |__ MessageBoard.jsx, MessageBoard.css
+         |__ Post/
+              |__ Post.jsx, Post.css
+         |__ SignIn/
+              |__ SignIn.jsx, SignIn.css
+         |__ SignUp/
+              |__ SignUp.jsx, SignUp.css
+    
+    |__ Services
+         |__ apiConfig.js, auth.js, users.js, farms.js 
+    
 
 ```
 
@@ -76,7 +77,7 @@ db -> Migrate -> migration files
 | Authentication                               |    H     |      3hrs      |     hrs      |    hrs     |
 | Basic React                                  |    H     |      1hrs      |     hrs      |    hrs     |
 | Add in Components and React Router           |    H     |      1hrs      |     hrs      |    hrs     |
-| Basic JSX for Each Component                 |    H     |      1hrs      |     hrs      |    hrs     |
+| Boilerplate for Components                   |    H     |      1hrs      |     hrs      |    hrs     |
 | Add Sign In and Sign Up                      |    H     |      3hrs      |     hrs      |    hrs     |
 | Work on Message Board                        |    H     |      3hrs      |     hrs      |    hrs     |
 | Make Edit and Delete for Messages            |    H     |      2hrs      |     hrs      |    hrs     |
@@ -85,16 +86,16 @@ db -> Migrate -> migration files
 | Add Crop Counter                             |    H     |      2hrs      |    hrs     |   hrs    |
 | Add Message Board/Leaderboard to Farm Page   |    H     |      1hrs      |     hrs      |    hrs     |
 | Make Sure Crops Work Properly                |    H     |      1hrs      |     hrs      |    hrs     |
-| CSS Styling                                  |    H     |      3hrs      |    hrs     |   hrs    |
+| CSS Styling                                  |    H     |      6hrs      |    hrs     |   hrs    |
 | Media Queries                                |    H     |      1hrs      |     hrs      |    hrs     |
 | Work on Leaderboard Component                |    M     |      2hrs      |     hrs      |    hrs     |
 | Finish Leaderboard and add Styling           |    M     |      1hrs      |    hrs     |   hrs    |
 | PMVP                                         |    L     |      5hrs      |     hrs      |    hrs     |
 | Finish Up Functionality + Debugging          |    H     |      4hrs      |     hrs      |    hrs     |
-| Deployment                                  |    H     |      2hrs      |     hrs      |    hrs     |
+| Deployment                                   |    H     |      2hrs      |     hrs      |    hrs     |
 | Linting                                      |    H     |      1hrs      |     hrs      |    hrs     |
 | Final Review                                 |    H     |      1hrs      |     hrs      |    hrs     |
-| Total                                        |    H     |     46hrs      |     hrs     |    hrs    |
+| Total                                        |    H     |     49hrs      |     hrs     |    hrs    |
 
 
 #### PostMVP
