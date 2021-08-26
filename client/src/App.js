@@ -37,6 +37,7 @@ function App() {
     localStorage.removeItem('authToken')
     removeToken()
     setCurrentUser(null)
+    history.push('/')
   }
 
   return (
@@ -64,6 +65,11 @@ function App() {
       <Route path='/message-board'>
         <MessageBoard currentUser={currentUser} />
       </Route>
+
+      <Route path='/post'>
+        <Post />
+      </Route>
+        
     </div>
   );
 }

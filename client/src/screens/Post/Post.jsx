@@ -1,3 +1,5 @@
+// Popup made with help from https://www.cluemediator.com/create-simple-popup-in-reactjs
+
 import React from 'react'
 
 function Post(props) {

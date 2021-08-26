@@ -1,4 +1,7 @@
-import React, {useEffect, useState} from 'react';
+// Popup made with help from https://www.cluemediator.com/create-simple-popup-in-reactjs
+
+import React, { useEffect, useState } from 'react';
+import './MessageBoard.css'
 import HomeIcon from '@material-ui/icons/Home';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Post from '../Post/Post'
@@ -36,7 +39,7 @@ function MessageBoard(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    history.push('/farm')
+    history.push('/message-board')
   }
 
   return (
@@ -50,7 +53,7 @@ function MessageBoard(props) {
           <AddBoxIcon onClick={togglePopup} />
         {/* </button> */}
         {isOpen && <Post content={<>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit, togglePopup}>
             <input
               placeholder='new message...'
               id='description'
