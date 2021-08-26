@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   resources :users, only: :create
 
   get '/users/:user_id', to: 'posts#create_post'
+  resources :posts
 end

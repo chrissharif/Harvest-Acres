@@ -2,13 +2,15 @@ import React, {useEffect, useState} from 'react';
 import HomeIcon from '@material-ui/icons/Home';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Post from '../Post/Post'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 
 function MessageBoard(props) {
 
   const [posts, setPosts] = useState([])
   const [isOpen, setIsOpen] = useState(false)
+  const [input, setInput] = useState({ description: "" })
+  const history = useHistory()
 
   const { currentUser } = props
 
@@ -24,6 +26,19 @@ function MessageBoard(props) {
     setIsOpen(!isOpen)
   }
 
+  const handleChange = (e) => {
+    const { id, value } = e.target
+    setInput((prevInput) => ({
+      ...prevInput,
+      [id]: value,
+    }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    history.push('/farm')
+  }
+
   return (
     <div>
       <header className='message-board-header'>
@@ -33,8 +48,27 @@ function MessageBoard(props) {
         <div className='message-board-title'>Message Board</div>
           {/* <button onClick={togglePopup}> */}
           <AddBoxIcon onClick={togglePopup} />
-          {/* </button> */}
+        {/* </button> */}
+        {isOpen && <Post content={<>
+          <form onSubmit={handleSubmit}>
+            <input
+              placeholder='new message...'
+              id='description'
+              value={input.description}
+              onChange={handleChange}
+            />
+            <button>Create New Message</button>
+          </form>
+        </>} handleClose={togglePopup} />}
+        <div>Logged in as: {currentUser.username} </div>
       </header>
+      <div className='posts'>
+        {posts.map((post, index) => (
+          <div className='post-container' key={index}>
+            <div>{post.description}</div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
