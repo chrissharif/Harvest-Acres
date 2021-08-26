@@ -6,6 +6,7 @@ import SignIn from './screens/SignIn/SignIn'
 import SignUp from './screens/SignUp/SignUp'
 import Farm from './screens/Farm/Farm'
 import MessageBoard from './screens/MessageBoard/MessageBoard'
+import Post from './screens/Post/Post'
 
 function App() {
 

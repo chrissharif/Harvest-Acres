@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from 'react-router-dom'
 
 function SignUp(props) {
 
@@ -23,6 +24,7 @@ function SignUp(props) {
       <form onSubmit={(e) => {
         e.preventDefault()
         handleRegister(formData)
+        console.log(formData)
       }}>
 
         <label>Username:</label>
