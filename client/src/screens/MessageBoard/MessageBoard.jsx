@@ -14,9 +14,8 @@ function MessageBoard(props) {
   const [posts, setPosts] = useState([])
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({ description: "" })
-  // const [editFormData, setEditFormData] = useState({ description: "" })
   const history = useHistory()
-  const {id} = useParams()
+  // const {id} = useParams()
 
   const { currentUser } = props
   const { description } = formData
@@ -60,16 +59,17 @@ function MessageBoard(props) {
   const handleDelete = async (id) => {
     await deletePost(id)
     setPosts((prevState) => prevState.filter((post) => post.id !== id))
+    alert('Message Deleted!')
   }
 
-  // const handleUpdate = async (id, formData) => {
-  //   const postData = await putPost(id, formData)
-  //   setPosts((prevState) =>
-  //     prevState.map((post) => {
-  //     return post.id === Number(id) ? postData : post
-  //     }))
-  //   history.push('/message-board')
-  // }
+  const handleUpdate = async (id, formData) => {
+    const postData = await putPost(id, formData)
+    setPosts((prevState) =>
+      prevState.map((post) => {
+      return post.id === Number(id) ? postData : post
+      }))
+    history.push('/message-board')
+  }
 
   return (
     <div>
@@ -90,6 +90,7 @@ function MessageBoard(props) {
               placeholder='new message...'
               type='text'
               name='description'
+              autoComplete='off'
               value={description}
               onChange={handleChange}
             />
@@ -105,12 +106,12 @@ function MessageBoard(props) {
             <div>{post.description}</div>
             {currentUser?.id === post.user_id && (
               <>
-                <button>Edit</button>
-                {/* {isOpen && <EditPost content={<>
+                <button onClick={togglePopup}>Edit</button>
+                {isOpen && <EditPost content={<>
                   <form onSubmit={(e) => {
                     e.preventDefault()
                     handleUpdate(formData)
-                    // console.log(editFormData)
+                    console.log(formData)
                     togglePopup()
                   }}>
                     <input
@@ -118,17 +119,11 @@ function MessageBoard(props) {
                       type='text'
                       name='description'
                       value={description}
-                      onChange={(e) => {
-                        const { name, value } = e.target
-                        setFormData((prevState) => ({
-                          ...prevState,
-                          [name]: value,
-                        }))
-                      }}
+                      onChange={handleChange}
                     />
-                    <button>Create New Message</button>
+                    <button>Edit Message</button>
                   </form>
-                </>} handleClose={togglePopup} />} */}
+                </>} handleClose={togglePopup} />}
                 <button onClick={() => handleDelete(post.id)}>Delete</button>
               </>
             )}
