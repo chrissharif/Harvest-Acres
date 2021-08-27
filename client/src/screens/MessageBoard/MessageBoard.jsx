@@ -37,10 +37,10 @@ function MessageBoard(props) {
   }
 
   const handleChange = (e) => {
-    const { description, value } = e.target
+    const { name, value } = e.target
     setFormData((prevState) => ({
       ...prevState,
-      [description]: value,
+      [name]: value,
     }))
   }
 
@@ -61,7 +61,7 @@ function MessageBoard(props) {
             <input
               placeholder='new message...'
               type='text'
-              description='description'
+              name='description'
               value={description}
               onChange={handleChange}
             />

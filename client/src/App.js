@@ -44,10 +44,12 @@ function App() {
     <div>
 
       <Route exact path='/'>
-        <header className='header'>Harvest Acres</header>
-        <Link to='/sign-in'>
-          <button className='start-button'>click here to play</button>
-        </Link>
+        <div className='landing-screen'>
+          <header className='header'>Harvest Acres</header>
+          <Link to='/sign-in'>
+            <button className='start-button'>click here to play</button>
+          </Link>
+        </div>
       </Route>
 
       <Route path='/farm'>

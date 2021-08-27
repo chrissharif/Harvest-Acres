@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
+import './SignIn.css'
 
 function SignIn(props) {
 
@@ -19,33 +20,36 @@ function SignIn(props) {
   return (
     <div className='sign-in-container'>
       <header className='header'>Harvest Acres</header>
-      <h1 className='h1'>Sign In</h1>
+      <div className='wood-board'>
 
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        handleLogin(formData)
-      }}>
+        <h1 className='h1'>Sign In</h1>
 
-        <label>Username:</label>
-        <input
-          name='username'
-          type='text'
-          value={username}
-          onChange={handleChange}
-        />
+        <form onSubmit={(e) => {
+          e.preventDefault()
+          handleLogin(formData)
+        }}>
 
-        <label>Password:</label>
-        <input
-          name='password'
-          type='password'
-          value={password}
-          onChange={handleChange}
-        />
+          <label>Username:</label>
+          <input
+            name='username'
+            type='text'
+            value={username}
+            onChange={handleChange}
+          />
 
-        <button>Sign In</button>
-        <div>Don't have an account?</div>
-        <Link to='/sign-up'>Sign Up</Link>
-      </form>
+          <label>Password:</label>
+          <input
+            name='password'
+            type='password'
+            value={password}
+            onChange={handleChange}
+          />
+
+          <button>Sign In</button>
+          <div>Don't have an account?</div>
+          <Link to='/sign-up'>Sign Up</Link>
+        </form>
+      </div>
     </div>
   )
 }
