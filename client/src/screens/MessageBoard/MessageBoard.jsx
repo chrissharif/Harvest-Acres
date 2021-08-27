@@ -12,34 +12,36 @@ function MessageBoard(props) {
 
   const [posts, setPosts] = useState([])
   const [isOpen, setIsOpen] = useState(false)
-  const [input, setInput] = useState({ description: "" })
+  const [formData, setFormData] = useState({ description: "" })
   const history = useHistory()
 
   const { currentUser } = props
+  const { description } = formData
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const postList = await getAllPosts()
-      setPosts(postList)
-    }
-    fetchPosts()
-  }, [])
+  // useEffect(() => {
+  //   const fetchPosts = async () => {
+  //     const postList = await getAllPosts()
+  //     setPosts(postList)
+  //   }
+  //   fetchPosts()
+  // }, [])
 
   const togglePopup = () => {
     setIsOpen(!isOpen)
   }
 
-  const handleChange = (e) => {
-    const { id, value } = e.target
-    setInput((prevInput) => ({
-      ...prevInput,
-      [id]: value,
-    }))
+  const handleCreate = async (formData) => {
+    const postData = await postPost(formData)
+    setPosts((prevState) => [...prevState, postData])
+    history.push('/message-board')
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    history.push('/message-board')
+  const handleChange = (e) => {
+    const { description, value } = e.target
+    setFormData((prevState) => ({
+      ...prevState,
+      [description]: value,
+    }))
   }
 
   return (
@@ -49,15 +51,18 @@ function MessageBoard(props) {
           <HomeIcon />
         </Link>
         <div className='message-board-title'>Message Board</div>
-          {/* <button onClick={togglePopup}> */}
           <AddBoxIcon onClick={togglePopup} />
-        {/* </button> */}
         {isOpen && <Post content={<>
-          <form onSubmit={handleSubmit, togglePopup}>
+          <form onSubmit={togglePopup, (e) => {
+            e.preventDefault()
+            handleCreate(formData)
+            console.log(formData)
+          }}>
             <input
               placeholder='new message...'
-              id='description'
-              value={input.description}
+              type='text'
+              description='description'
+              value={description}
               onChange={handleChange}
             />
             <button>Create New Message</button>
