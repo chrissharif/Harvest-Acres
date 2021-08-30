@@ -88,10 +88,8 @@ src
 | Work on Message Board                      |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Make Edit and Delete for Messages          |    H     |      2hrs      |     6hrs      |    6hrs     |
 | Work on Farm Page                          |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Add Crops and Buttons for Crops            |    H     |      2hrs      |      hrs      |     hrs     |
 | Add Crop Counter                           |    H     |      2hrs      |      hrs      |     hrs     |
 | Add Message Board/Leaderboard to Farm Page |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| Make Sure Crops Work Properly              |    H     |      1hrs      |      hrs      |     hrs     |
 | CSS Styling                                |    H     |      6hrs      |      hrs      |     hrs     |
 | Media Queries                              |    H     |      1hrs      |      hrs      |     hrs     |
 | Work on Leaderboard Component              |    M     |      2hrs      |    0.5hrs     |   0.5hrs    |
@@ -101,7 +99,7 @@ src
 | Deployment                                 |    H     |      2hrs      |     1hrs      |    1hrs     |
 | Linting                                    |    H     |      1hrs      |      hrs      |     hrs     |
 | Final Review                               |    H     |      1hrs      |      hrs      |     hrs     |
-| Total                                      |    H     |     49hrs      |      hrs      |     hrs     |
+| Total                                      |    H     |     46hrs      |      hrs      |     hrs     |
 
 #### PostMVP
 
