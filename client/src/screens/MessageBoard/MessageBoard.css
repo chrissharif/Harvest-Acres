@@ -131,3 +131,20 @@
   border: 1px solid #999;
   font-size: 20px;
 }
+
+.swal-title {
+  font-family: Risque;
+  color: darkolivegreen;
+  font-size: 35px;
+}
+
+.swal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swal-button {
+  background-color: bisque;
+  color: darkolivegreen;
+  font-family: Risque;
+  font-size: 20px;
+}

@@ -60,7 +60,7 @@ function MessageBoard(props) {
   const handleDelete = async (id) => {
     await deletePost(id)
     setPosts((prevState) => prevState.filter((post) => post.id !== id))
-    alert('Message Deleted!')
+    swal('Message Deleted!', "", "success")
   }
 
   const handleUpdate = async (id, formData) => {
