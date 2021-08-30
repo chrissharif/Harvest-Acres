@@ -125,3 +125,4 @@ code
 - Wasn't able to type in my forms
   - Had a small syntax error
 - Wasn't able to edit posts
+  - Forgot to pass in 'id' through handleUpdate function
