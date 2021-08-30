@@ -124,4 +124,4 @@ code
   - Realized URL was set as Url in api-config
 - Wasn't able to type in my forms
   - Had a small syntax error
--
+- Wasn't able to edit posts
