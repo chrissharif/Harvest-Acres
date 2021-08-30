@@ -120,6 +120,6 @@ code
 
 ## Code Issues & Resolutions
 
--
+- Had problems with my routes
 -
 -
