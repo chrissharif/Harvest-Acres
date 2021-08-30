@@ -106,6 +106,7 @@ src
 #### PostMVP
 
 - Have a leaderboard
+- Let users collect crops
 - Allow user to unlock different crops
 - Add animations for harvesting crops, posting on board
 - Have the post page as a pop-up
