@@ -123,4 +123,5 @@ code
 - Had problems with my routes
   - Realized URL was set as Url in api-config
 - Wasn't able to type in my forms
+  - Had a small syntax error
 -
