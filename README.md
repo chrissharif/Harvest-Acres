@@ -121,5 +121,6 @@ code
 ## Code Issues & Resolutions
 
 - Had problems with my routes
+  - Realized URL was set as Url in api-config
 -
 -
