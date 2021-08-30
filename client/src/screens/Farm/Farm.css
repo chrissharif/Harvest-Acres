@@ -1,0 +1,61 @@
+.farm-nav {
+  font-family: Risque;
+}
+
+.farm-username {
+  font-size: 40px;
+  width: 250px;
+  margin: 25px 0px 50px -210px;
+}
+
+.crop-counter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+
+.farm-logout {
+  font-family: Risque;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.message-link {
+  transform: scale(2.5);
+  position: absolute;
+  right: 100px;
+  top: 250px;
+  color: darkolivegreen;
+}
+
+.leaderboard-link {
+  transform: scale(2.5);
+  position: absolute;
+  right: 100px;
+  top: 450px;
+  color: darkolivegreen;
+}
+
+.crop-container {
+  background-image: url("https://i.gyazo.com/38b2aa12114e42cdc4982149acd9cbc6.jpg");
+  background-size: cover;
+  width: 825px;
+  height: 100vh;
+  display: grid;
+}
+
+.farm-container {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+}

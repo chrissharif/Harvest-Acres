@@ -1,26 +1,39 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ChatIcon from '@material-ui/icons/Chat';
+import BarChartIcon from '@material-ui/icons/BarChart';
+import "./Farm.css"
 
 function Farm(props) {
 
-  const [crops, setCrops] = useState(0)
+  // const [crops, setCrops] = useState(0)
 
   const { currentUser } = props
   const { handleLogout } = props
 
   return (
     <div>
-      <header className='farm-header'>
-        <div className='farm-header-username'>{currentUser.username}'s Farm</div>
-        {/* <div className='crop-counter'>{crops}</div> */}
-        <Link to='/message-board'>
+      <div className='farm-container'>
+      <nav className='farm-nav'>
+        <div className='farm-username'>{currentUser.username}'s Farm</div>
+        <div className='crop-counter'>
+          <div>Crops:</div>
+          <div>0</div>   
+        </div>
+        <Link to='/message-board' className='message-link'>
           <ChatIcon />
         </Link>
+        <Link to='/leaderboard' className='leaderboard-link'>
+          <BarChartIcon />
+        </Link>
         <form onSubmit={handleLogout}>
-          <button>Logout</button>
+          <button className='farm-logout'>Logout</button>
         </form>
-      </header>
+      </nav>
+        <div className='crop-container'>
+
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
+import './SignUp.css'
 
 function SignUp(props) {
 
@@ -17,44 +18,58 @@ function SignUp(props) {
   }
 
   return (
-    <div className='sign-up-container'>
-      <header className='header'>Harvest Acres</header>
-      <h1 className='h1'>Sign Up</h1>
+      <div className='sign-up'>
+        <header className='header'>Harvest Acres</header>
+      
+        <div className='wood-board'>
+          <h1 className='h1'>Sign Up</h1>
+          <div className='sign-up-container'>
 
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        handleRegister(formData)
-        console.log(formData)
-      }}>
+            <form onSubmit={(e) => {
+              e.preventDefault()
+              handleRegister(formData)
+              console.log(formData)
+            }}>
+            <div className='input'>
+              <label className='label'>Username:</label>
+              <input
+                className='form-input'
+                name='username'
+                type='text'
+                value={username}
+                onChange={handleChange}
+              />      
+            </div>
 
-        <label>Username:</label>
-        <input
-          name='username'
-          type='text'
-          value={username}
-          onChange={handleChange}
-        />
+            <div className='input sign-up-email'>
+              <label className='label'>Email:</label>
+              <input
+                className='form-input'
+                name='email'
+                type='text'
+                value={email}
+                onChange={handleChange}
+              />     
+            </div>
 
-        <label>Email:</label>
-        <input
-          name='email'
-          type='text'
-          value={email}
-          onChange={handleChange}
-        />
+            <div className='input sign-up-password'>
+              <label className='label'>Password:</label>
+              <input
+                className='form-input'
+                name='password'
+                type='password'
+                value={password}
+                onChange={handleChange}
+              />     
+            </div>
 
-        <label>Password:</label>
-        <input
-          name='password'
-          type='password'
-          value={password}
-          onChange={handleChange}
-        />
-
-        <button>Sign Up</button>
-        <div>Have an account already?</div>
-        <Link to='/sign-in'>Sign In</Link>
-      </form>
+            <button className='sign-up-button'>Sign Up</button>
+            <div className='sign-up-link-div'>Have an account already?
+              <Link to='/sign-in' className='form-link'>Sign In</Link>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }
