@@ -9,6 +9,7 @@ import MessageBoard from './screens/MessageBoard/MessageBoard'
 import Post from './screens/Post/Post'
 import EditPost from './screens/EditPost/EditPost'
 import Leaderboard from './screens/Leaderboard/Leaderboard'
+import Footer from './screens/Footer/Footer'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
             <button className='start-button'>click here to play</button>
           </Link>
         </div>
+        <Footer />
       </Route>
 
       <Route path='/farm'>
