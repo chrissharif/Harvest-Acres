@@ -14,7 +14,8 @@ This farm-style collection game is for those who love the game HayDay. In this g
 
 - Have a Login/Signup
 - Let the user have a farm
-- Let the farm have crops for the user to harvest
+- Let the user post on message board
+- User will be able to edit and delete messages
 - Create a posting board for farmers to chat with others
 
 ## Libraries and Dependencies
