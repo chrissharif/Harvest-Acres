@@ -8,6 +8,7 @@ import Post from '../Post/Post'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 import EditPost from '../EditPost/EditPost'
+import swal from 'sweetalert';
 
 function MessageBoard(props) {
 
