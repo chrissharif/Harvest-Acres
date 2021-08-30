@@ -57,6 +57,8 @@ src
               |__ EditPost.jsx, EditPost.css
          |__ Farm/
               |__ Farm.jsx, Farm.css
+         |__ Leaderboard/
+              |__ Leaderboard.jsx, Leaderboard.css
          |__ MessageBoard/
               |__ MessageBoard.jsx, MessageBoard.css
          |__ Post/
