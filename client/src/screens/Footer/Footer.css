@@ -1,6 +1,25 @@
+a {
+  margin: 0px 25px 0px 0px;
+}
+
 .footer {
-  background-color: bisque;
+  background-color: rgba(255, 228, 196, 0.7);
   color: darkolivegreen;
-  height: 100px;
+  height: 7vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-name {
+  font-family: Risque;
+  font-weight: 600;
+  margin: 0px 50px 0px 0px;
+}
+
+.linked-in {
+  transform: scale(1.3);
 }
