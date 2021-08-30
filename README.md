@@ -70,7 +70,7 @@ src
               |__ SignUp.jsx, SignUp.css
 
     |__ Services
-         |__ apiConfig.js, auth.js, users.js, farms.js
+         |__ apiConfig.js, auth.js, users.js, farms.js, posts.js
 
 
 ```
