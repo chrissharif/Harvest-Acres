@@ -9,4 +9,15 @@
   align-items: center;
   flex-direction: column;
   font-family: Risque;
+  font-size: 60px;
+  color: white;
+  text-shadow: -3px 3px black;
+}
+
+.leaderboard-home-link {
+  transform: scale(2.5);
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  color: darkolivegreen;
 }

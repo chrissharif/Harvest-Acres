@@ -72,64 +72,75 @@ function MessageBoard(props) {
   }
 
   return (
-    <div>
+    <div className='message-board'>
       <header className='message-board-header'>
-        <Link to='/farm'>
+        <Link className='message-board-home-link' to='/farm'>
           <HomeIcon />
         </Link>
+        <div className ='logged-in'>Logged in as: {currentUser.username} </div>
         <div className='message-board-title'>Message Board</div>
-          <AddBoxIcon onClick={togglePopup} />
-        {isOpen && <Post content={<>
-          <form onSubmit={(e) => {
-            e.preventDefault()
-            handleCreate(formData)
-            console.log(formData)
-            togglePopup()
-          }}>
-            <input
-              placeholder='new message...'
-              type='text'
-              name='description'
-              autoComplete='off'
-              value={description}
-              onChange={handleChange}
-            />
-            <button>Create New Message</button>
-          </form>
-        </>} handleClose={togglePopup} />}
-        <div>Logged in as: {currentUser.username} </div>
-      </header>
-      <div className='posts'>
-        {posts.map((post, index) => (
-          <div className='post-container' key={index}>
-            <div>{post.user_id}</div>
-            <div>{post.description}</div>
-            {currentUser?.id === post.user_id && (
-              <>
-                <button onClick={togglePopup}>Edit</button>
-                {isOpen && <EditPost content={<>
-                  <form onSubmit={(e) => {
-                    e.preventDefault()
-                    handleUpdate(formData)
-                    console.log(formData)
-                    togglePopup()
-                  }}>
-                    <input
-                      placeholder='edit message...'
-                      type='text'
-                      name='description'
-                      autoComplete='off'
-                      value={description}
-                      onChange={handleChange}
-                    />
-                    <button>Edit Message</button>
-                  </form>
-                </>} handleClose={togglePopup} />}
-                <button onClick={() => handleDelete(post.id)}>Delete</button>
-              </>
-            )}
+        <AddBoxIcon className='new-post-link' onClick={togglePopup} />
+        </header>
+        <div className='message-board-wood-board'>
+          <div className='message-container'>
+
+          {isOpen && <Post content={<>
+            <form className='message-form' onSubmit={(e) => {
+              e.preventDefault()
+              handleCreate(formData)
+              console.log(formData)
+              togglePopup()
+            }}>
+              <textarea
+                className='message-form-input'
+                placeholder='new message...'
+                cols='30'
+                rows='10'
+                type='text'
+                name='description'
+                autoComplete='off'
+                value={description}
+                onChange={handleChange}
+              />
+            <button className='message-board-button'>Create New Message</button>
+            </form>
+          </>} handleClose={togglePopup} />}
+          <div className='posts'>
+            {posts.map((post, index) => (
+              <div className='post-container' key={index}>
+                <div>{post.user_id}</div>
+                <div>{post.description}</div>
+                {currentUser?.id === post.user_id && (
+                  <>
+                    <button onClick={togglePopup}>Edit</button>
+                    {isOpen && <EditPost content={<>
+                      <form className='message-form' onSubmit={(e) => {
+                        e.preventDefault()
+                        handleUpdate(post.id, formData)
+                        console.log(formData)
+                        togglePopup()
+                      }}>
+                      <textarea
+                        className='message-form-input'
+                        placeholder='edit message...'
+                        cols='30'
+                        rows='10'
+                        type='text'
+                        name='description'
+                        autoComplete='off'
+                        value={description}
+                        onChange={handleChange}
+                      />
+                      <button className='message-board-button'>Edit Message</button>
+                    </form>
+                    </>} handleClose={togglePopup} />}
+                    <button onClick={() => handleDelete(post.id)}>Delete</button>
+                </>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   )

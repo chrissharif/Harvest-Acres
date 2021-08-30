@@ -16,7 +16,10 @@ function Farm(props) {
       <div className='farm-container'>
       <nav className='farm-nav'>
         <div className='farm-username'>{currentUser.username}'s Farm</div>
-        {/* <div className='crop-counter'>{crops}</div> */}
+        <div className='crop-counter'>
+          <div>Crops:</div>
+          <div>0</div>   
+        </div>
         <Link to='/message-board' className='message-link'>
           <ChatIcon />
         </Link>

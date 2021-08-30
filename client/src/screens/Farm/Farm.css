@@ -8,6 +8,17 @@
   margin: 25px 25px 50px -210px;
 }
 
+.crop-counter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+
 .farm-logout {
   font-family: Risque;
   position: fixed;
@@ -23,7 +34,7 @@
   transform: scale(2.5);
   position: absolute;
   right: 100px;
-  top: 200px;
+  top: 250px;
   color: darkolivegreen;
 }
 
@@ -31,7 +42,7 @@
   transform: scale(2.5);
   position: absolute;
   right: 100px;
-  top: 400px;
+  top: 450px;
   color: darkolivegreen;
 }
 

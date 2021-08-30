@@ -1,5 +1,68 @@
 /* Popup made with help from https://www.cluemediator.com/create-simple-popup-in-reactjs */
 
+.message-board {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/042/718/non_2x/countryside-ranch-with-barn-and-cows-vector.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logged-in {
+  font-family: Risque;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 150px;
+}
+
+.message-board-title {
+  font-family: Risque;
+  font-size: 60px;
+  color: white;
+  text-shadow: -3px 3px black;
+  position: absolute;
+  top: 65px;
+  left: 450px;
+}
+
+.message-board-home-link {
+  transform: scale(2.5);
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: darkolivegreen;
+}
+
+.new-post-link {
+  transform: scale(2.5);
+  position: absolute;
+  right: 60px;
+  top: 50px;
+  color: darkolivegreen;
+}
+
+.message-board-wood-board {
+  background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/39007/wooden-bulletin-board-clipart-md.png");
+  background-size: cover;
+  width: 70vw;
+  height: 85vh;
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts {
+  margin: 100px;
+}
+
 .popup-box {
   position: fixed;
   background: #00000050;
@@ -11,16 +74,46 @@
 
 .box {
   position: relative;
-  width: 70%;
+  width: 400px;
   margin: 0 auto;
   height: auto;
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
   background: #fff;
-  border-radius: 4px;
+  border-radius: 15px;
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
+  background-color: darkolivegreen;
+  border: solid 2px white;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-board-button {
+  font-family: Risque;
+  background-color: bisque;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  width: 125px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.message-form-input {
+  font-family: Risque;
+  border-radius: 20px;
+  border: solid 2px black;
+  background-color: bisque;
+  color: black;
+  padding: 5px;
+  margin: 0px 0px 25px 0px;
+  font-size: 20px;
 }
 
 .close-icon {
