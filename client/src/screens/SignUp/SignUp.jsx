@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 import './SignUp.css'
+import Footer from '../Footer/Footer'
 
 function SignUp(props) {
 
@@ -70,6 +71,7 @@ function SignUp(props) {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

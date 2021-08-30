@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 import './SignIn.css'
+import Footer from '../Footer/Footer'
 
 function SignIn(props) {
 
@@ -58,6 +59,7 @@ function SignIn(props) {
         </form>
       </div>
       </div>
+      <Footer />
     </div>
   )
 }
