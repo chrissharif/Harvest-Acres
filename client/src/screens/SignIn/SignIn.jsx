@@ -18,37 +18,45 @@ function SignIn(props) {
   }
 
   return (
-    <div className='sign-in-container'>
+    <div className='sign-in'>
       <header className='header'>Harvest Acres</header>
       <div className='wood-board'>
 
         <h1 className='h1'>Sign In</h1>
+    <div className='sign-in-container'>
 
         <form onSubmit={(e) => {
           e.preventDefault()
           handleLogin(formData)
         }}>
+          <div className='input'>
+            <label className='label'>Username:</label>
+            <input
+              className='form-input'
+              name='username'
+              type='text'
+              value={username}
+              onChange={handleChange}
+            />   
+          </div>
 
-          <label>Username:</label>
-          <input
-            name='username'
-            type='text'
-            value={username}
-            onChange={handleChange}
-          />
+          <div className='input password-input'>
+            <label className='label'>Password:</label>
+            <input
+              className='form-input'
+              name='password'
+              type='password'
+              value={password}
+              onChange={handleChange}
+            />  
+          </div>
 
-          <label>Password:</label>
-          <input
-            name='password'
-            type='password'
-            value={password}
-            onChange={handleChange}
-          />
-
-          <button>Sign In</button>
-          <div>Don't have an account?</div>
-          <Link to='/sign-up'>Sign Up</Link>
+          <button className='form-button'>Sign In</button>
+          <div className='form-link-div'>Don't have an account?
+            <Link to='/sign-up' className='form-link'>Sign Up</Link>
+          </div>
         </form>
+      </div>
       </div>
     </div>
   )

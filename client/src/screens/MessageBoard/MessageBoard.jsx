@@ -118,6 +118,7 @@ function MessageBoard(props) {
                       placeholder='edit message...'
                       type='text'
                       name='description'
+                      autoComplete='off'
                       value={description}
                       onChange={handleChange}
                     />

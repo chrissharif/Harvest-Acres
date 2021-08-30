@@ -7,7 +7,7 @@ import SignUp from './screens/SignUp/SignUp'
 import Farm from './screens/Farm/Farm'
 import MessageBoard from './screens/MessageBoard/MessageBoard'
 import Post from './screens/Post/Post'
-import { deletePost } from './services/posts';
+import EditPost from './screens/EditPost/EditPost'
 
 function App() {
 
@@ -71,6 +71,10 @@ function App() {
 
       <Route path='/post'>
         <Post />
+      </Route>
+
+      <Route exact path='/post/:id/edit'>
+        <EditPost />
       </Route>
         
     </div>

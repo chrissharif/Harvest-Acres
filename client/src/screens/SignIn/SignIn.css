@@ -1,12 +1,80 @@
-.sign-in-container {
+.sign-in {
   background-image: url("https://static.vecteezy.com/system/resources/previews/002/042/686/non_2x/grazing-cows-on-sunset-vector.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
   margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .wood-board {
   background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/39007/wooden-bulletin-board-clipart-md.png");
-  background-size: 300px;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+}
+
+.h1 {
+  font-family: Risque;
+  color: white;
+  text-shadow: -3px 3px black;
+  margin: 0px 0px 70px 210px;
+}
+
+.label {
+  font-family: Risque;
+  margin: 10px 20px;
+}
+
+.input {
+  margin: -50px 0px 90px 100px;
+}
+
+.form-input {
+  font-family: Risque;
+  border-radius: 20px;
+  border: solid 2px black;
+}
+
+.password-input {
+  margin: -50px 0px 35px 100px;
+}
+
+.form-button {
+  margin: 10px 0px 30px 230px;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  font-family: Risque;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.form-link-div {
+  font-family: Risque;
+  margin: 10px 0px 0px 150px;
+}
+
+.form-link {
+  margin: 0px 0px 0px 15px;
+}
+
+@keyframes floating {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
