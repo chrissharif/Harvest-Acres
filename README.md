@@ -117,7 +117,7 @@ src
 ## Code Showcase
 
 ```
-code
+
 ```
 
 ## Code Issues & Resolutions
