@@ -1,0 +1,21 @@
+.crop-container {
+  background-image: url("https://i.gyazo.com/38b2aa12114e42cdc4982149acd9cbc6.jpg");
+  background-size: cover;
+  width: 60vw;
+  height: 100vh;
+  display: grid;
+}
+
+.farm-container {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+}
+
+.farm-nav {
+  background-image: url("https://www.pinclipart.com/picdir/big/536-5369345_transparent-wood-plank-png-wood-plank-png-clipart.png");
+  background-size: cover;
+  width: 100vw;
+  height: 10vh;
+  font-family: Risque;
+}

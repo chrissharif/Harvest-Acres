@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ChatIcon from '@material-ui/icons/Chat';
+import "./Farm.css"
+import { BottomNavigationAction } from '@material-ui/core';
 
 function Farm(props) {
 
-  const [crops, setCrops] = useState(0)
+  // const [crops, setCrops] = useState(0)
 
   const { currentUser } = props
   const { handleLogout } = props
 
   return (
     <div>
-      <header className='farm-header'>
+      <nav className='farm-nav'>
         <div className='farm-header-username'>{currentUser.username}'s Farm</div>
         {/* <div className='crop-counter'>{crops}</div> */}
         <Link to='/message-board'>
@@ -20,7 +22,12 @@ function Farm(props) {
         <form onSubmit={handleLogout}>
           <button>Logout</button>
         </form>
-      </header>
+      </nav>
+      <div className='farm-container'>
+        <div className='crop-container'>
+
+        </div>
+      </div>
     </div>
   )
 }
