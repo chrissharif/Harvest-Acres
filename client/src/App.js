@@ -8,6 +8,7 @@ import Farm from './screens/Farm/Farm'
 import MessageBoard from './screens/MessageBoard/MessageBoard'
 import Post from './screens/Post/Post'
 import EditPost from './screens/EditPost/EditPost'
+import Leaderboard from './screens/Leaderboard/Leaderboard'
 
 function App() {
 
@@ -75,6 +76,10 @@ function App() {
 
       <Route exact path='/post/:id/edit'>
         <EditPost />
+      </Route>
+
+      <Route path='/leaderboard'>
+        <Leaderboard />
       </Route>
         
     </div>

@@ -1,7 +1,44 @@
+.farm-nav {
+  font-family: Risque;
+}
+
+.farm-username {
+  font-size: 40px;
+  width: 250px;
+  margin: 25px 25px 50px -210px;
+}
+
+.farm-logout {
+  font-family: Risque;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.message-link {
+  transform: scale(2.5);
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  color: darkolivegreen;
+}
+
+.leaderboard-link {
+  transform: scale(2.5);
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  color: darkolivegreen;
+}
+
 .crop-container {
   background-image: url("https://i.gyazo.com/38b2aa12114e42cdc4982149acd9cbc6.jpg");
   background-size: cover;
-  width: 60vw;
+  width: 825px;
   height: 100vh;
   display: grid;
 }
@@ -10,12 +47,4 @@
   background-color: bisque;
   display: flex;
   justify-content: center;
-}
-
-.farm-nav {
-  background-image: url("https://www.pinclipart.com/picdir/big/536-5369345_transparent-wood-plank-png-wood-plank-png-clipart.png");
-  background-size: cover;
-  width: 100vw;
-  height: 10vh;
-  font-family: Risque;
 }

@@ -1,0 +1,12 @@
+.leaderboard {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/042/686/non_2x/grazing-cows-on-sunset-vector.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Risque;
+}
