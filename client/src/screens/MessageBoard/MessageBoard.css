@@ -75,6 +75,13 @@
   background-color: #bf894b;
 }
 
+.message-board-username {
+  font-family: Risque;
+  font-size: 24px;
+  color: white;
+  text-shadow: -1.5px 1.5px black;
+}
+
 .edit-and-delete-buttons {
   background-color: darkolivegreen;
   float: right;
@@ -179,7 +186,7 @@
 
   .post-container {
     background-color: darkolivegreen;
-    height: 100px;
+    height: auto;
     margin: 0px 0px 30px 0px;
     padding: 15px;
     color: bisque;

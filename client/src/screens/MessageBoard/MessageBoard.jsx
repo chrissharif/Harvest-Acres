@@ -86,7 +86,6 @@ function MessageBoard(props) {
           {isOpen && <Post content={<>
             <form className='message-form' onSubmit={(e) => {
               e.preventDefault()
-              // formData.user = currentUser.username
               handleCreate(formData)
               console.log(formData)
               togglePopup()
@@ -109,7 +108,7 @@ function MessageBoard(props) {
           <div className='posts'>
             {posts.map((post, index) => (
               <div className='post-container' key={index}>
-                <div>{post.user.username}</div>
+                <div className='message-board-username'>{post.user.username} says:</div>
                 <div>{post.description}</div>
                 {currentUser?.id === post.user_id && (
                   <>
