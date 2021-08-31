@@ -117,7 +117,27 @@ src
 ## Code Showcase
 
 ```
-
+{isOpen && <EditPost content={<>
+  <form className='message-form' onSubmit={(e) => {
+    e.preventDefault()
+    handleUpdate(post.id, formData)
+    togglePopup()
+  }}>
+  <textarea
+    className='message-form-input'
+    placeholder='edit message...'
+    cols='30'
+    rows='10'
+    type='text'
+    name='description'
+    maxLength='100'
+    autoComplete='off'
+    value={description}
+    onChange={handleChange}
+  />
+  <button className='message-board-button'>Edit Message</button>
+  </form>
+</>} handleClose={togglePopup} />}
 ```
 
 ## Code Issues & Resolutions

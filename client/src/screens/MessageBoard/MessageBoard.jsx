@@ -86,6 +86,7 @@ function MessageBoard(props) {
           {isOpen && <Post content={<>
             <form className='message-form' onSubmit={(e) => {
               e.preventDefault()
+              // formData.user = currentUser.username
               handleCreate(formData)
               console.log(formData)
               togglePopup()
