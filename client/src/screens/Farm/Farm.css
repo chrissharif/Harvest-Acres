@@ -53,13 +53,22 @@
   background-size: cover;
   width: 825px;
   height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .farm-container {
   background-color: bisque;
   display: flex;
   justify-content: center;
+}
+
+.coming-soon {
+  font-size: 70px;
+  color: white;
+  text-shadow: -3px 3px black;
+  font-family: Risque;
 }
 
 @media screen and (max-width: 1250px) {

@@ -21,11 +21,15 @@ function MessageBoard(props) {
   const { description } = formData
 
   let fourPosts = []
+  let edgeNum = 4
 
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts()
-      for (let i = 0; i < 4; i++) {
+      if (postList.length < 4) {
+        edgeNum = postList.length
+      }
+      for (let i = 0; i < edgeNum; i++) {
         fourPosts.push(postList[i])
       }
       setPosts(fourPosts)

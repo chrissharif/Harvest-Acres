@@ -18,7 +18,7 @@ function Farm(props) {
         <div className='farm-username'>{currentUser.username}'s Farm</div>
         <div className='crop-counter'>
           <div>Crops:</div>
-          <div>0</div>   
+          <div>0</div>
         </div>
         <Link to='/message-board' className='message-link'>
           <ChatIcon />
@@ -31,7 +31,7 @@ function Farm(props) {
         </form>
       </nav>
         <div className='crop-container'>
-
+          <div className='coming-soon'>Coming Soon!</div>
         </div>
       </div>
     </div>
