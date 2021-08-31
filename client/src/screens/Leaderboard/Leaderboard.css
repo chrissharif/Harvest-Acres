@@ -28,7 +28,7 @@
 }
 
 .c {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -36,7 +36,7 @@
 }
 
 .first-o {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -44,7 +44,7 @@
 }
 
 .m {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -52,7 +52,7 @@
 }
 
 .i {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -60,7 +60,7 @@
 }
 
 .first-n {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -68,14 +68,14 @@
 }
 
 .g {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
 .s {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -84,7 +84,7 @@
 }
 
 .second-o {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -92,7 +92,7 @@
 }
 
 .third-o {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -100,7 +100,7 @@
 }
 
 .second-n {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -108,14 +108,14 @@
 }
 
 .exclamation {
-  animation-name: floating;
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
 }
 
-@keyframes floating {
+@keyframes float {
   0% {
     transform: translatey(0px);
   }

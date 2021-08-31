@@ -26,10 +26,11 @@
   position: fixed;
   right: 15px;
   top: 15px;
-  background-color: darkolivegreen;
-  color: white;
+  background-color: bisque;
+  color: darkolivegreen;
   font-size: 15px;
   padding: 5px 10px;
+  border: solid 2px white;
 }
 
 .message-link {
@@ -37,7 +38,10 @@
   position: absolute;
   right: 100px;
   top: 250px;
-  color: darkolivegreen;
+  color: bisque;
+  border: solid 1px white;
+  padding: 2px 3px 0px 3px;
+  border-radius: 5px;
 }
 
 .leaderboard-link {
@@ -45,7 +49,10 @@
   position: absolute;
   right: 100px;
   top: 450px;
-  color: darkolivegreen;
+  color: bisque;
+  border: solid 1px white;
+  padding: 0px 2px;
+  border-radius: 5px;
 }
 
 .crop-container {
@@ -59,9 +66,10 @@
 }
 
 .farm-container {
-  background-color: bisque;
+  background-color: darkolivegreen;
   display: flex;
   justify-content: center;
+  color: bisque;
 }
 
 .coming-soon {
