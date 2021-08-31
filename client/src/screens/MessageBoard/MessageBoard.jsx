@@ -123,6 +123,7 @@ function MessageBoard(props) {
                         rows='10'
                         type='text'
                         name='description'
+                        maxLength='100'
                         autoComplete='off'
                         value={description}
                         onChange={handleChange}

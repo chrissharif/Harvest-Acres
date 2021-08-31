@@ -70,7 +70,10 @@
   font-family: Risque;
   font-size: 20px;
   margin: 0px 0px 80px 0px;
-  width: 400px;
+  height: 30px;
+  width: 500px;
+  background-color: #bf894b;
+  z-index: 10;
 }
 
 .edit-and-delete-buttons {
@@ -168,4 +171,10 @@
   color: darkolivegreen;
   font-family: Risque;
   font-size: 20px;
+}
+
+@media screen and (max-width: 2000px) {
+  .post-container {
+    margin: 0px 0px 120px 0px;
+  }
 }
