@@ -2,6 +2,7 @@ import React from 'react'
 import './Leaderboard.css'
 import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 
 export default function Leaderboard() {
   return (
@@ -9,7 +10,8 @@ export default function Leaderboard() {
       <Link to='/farm' className='leaderboard-home-link'>
         <HomeIcon />
       </Link>
-      Coming Soon!
+      <div className='leaderboard-container'>Coming Soon!</div>
+      <Footer />
     </div>
   )
 }
