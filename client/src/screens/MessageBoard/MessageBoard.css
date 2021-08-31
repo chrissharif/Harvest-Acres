@@ -194,3 +194,12 @@
     border-radius: 20px;
   }
 }
+
+@media screen and (max-width: 1275px) {
+  .message-board-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 50px 0px -50px 0px;
+  }
+}
