@@ -5,7 +5,9 @@
 .farm-username {
   font-size: 40px;
   width: 250px;
-  margin: 25px 0px 50px -210px;
+  left: 30px;
+  top: 30px;
+  position: fixed;
 }
 
 .crop-counter {
@@ -58,4 +60,10 @@
   background-color: bisque;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+  .farm-username {
+    width: 125px;
+  }
 }
