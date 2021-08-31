@@ -10,7 +10,19 @@ export default function Leaderboard() {
       <Link to='/farm' className='leaderboard-home-link'>
         <HomeIcon />
       </Link>
-      <div className='leaderboard-container'>Coming Soon!</div>
+      <div className='leaderboard-container'>
+        <div className='c'>C</div>
+        <div className='first-o'>o</div>
+        <div className='m'>m</div>
+        <div className='i'>i</div>
+        <div className='first-n'>n</div>
+        <div className='g'>g</div>
+        <div className='s'>S</div>
+        <div className='second-o'>o</div>
+        <div className='third-o'>o</div>
+        <div className='second-n'>n</div>
+        <div className='exclamation'>!</div>
+      </div>
       <Footer />
     </div>
   )

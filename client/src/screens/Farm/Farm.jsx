@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import ChatIcon from '@material-ui/icons/Chat';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import "./Farm.css"
 
 function Farm(props) {
-
-  // const [crops, setCrops] = useState(0)
 
   const { currentUser } = props
   const { handleLogout } = props
@@ -31,7 +29,19 @@ function Farm(props) {
         </form>
       </nav>
         <div className='crop-container'>
-          <div className='coming-soon'>Coming Soon!</div>
+          <div className='coming-soon'>
+            <div className='c'>C</div>
+            <div className='first-o'>o</div>
+            <div className='m'>m</div>
+            <div className='i'>i</div>
+            <div className='first-n'>n</div>
+            <div className='g'>g</div>
+            <div className='s'>S</div>
+            <div className='second-o'>o</div>
+            <div className='third-o'>o</div>
+            <div className='second-n'>n</div>
+            <div className='exclamation'>!</div>
+          </div>
         </div>
       </div>
     </div>

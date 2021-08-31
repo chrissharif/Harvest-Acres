@@ -9,14 +9,12 @@ import { Link, useHistory } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 import EditPost from '../EditPost/EditPost'
 import swal from 'sweetalert';
-import { getAllUsers } from '../../services/users'
 
 function MessageBoard(props) {
 
   const [posts, setPosts] = useState([])
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({ description: "" })
-  const [users, setUsers] = useState([])
   const history = useHistory()
 
   const { currentUser } = props
@@ -38,14 +36,6 @@ function MessageBoard(props) {
     }
     fetchPosts()
   }, [])
-
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     const usersList = await getAllUsers()
-  //     setUsers(usersList)
-  //   }
-  //   fetchUsers()
-  // }, [])
 
   const togglePopup = () => {
     setIsOpen(!isOpen)
