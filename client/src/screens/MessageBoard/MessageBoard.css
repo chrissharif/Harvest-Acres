@@ -73,6 +73,17 @@
   width: 400px;
 }
 
+.edit-and-delete-buttons {
+  background-color: darkolivegreen;
+  float: right;
+  color: bisque;
+  font-family: Risque;
+  margin: 0px 5px;
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
 .popup-box {
   position: fixed;
   background: #00000050;
