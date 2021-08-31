@@ -5,7 +5,7 @@ import './MessageBoard.css'
 import HomeIcon from '@material-ui/icons/Home';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Post from '../Post/Post'
-import { Link, useHistory, useParams } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 import EditPost from '../EditPost/EditPost'
 import swal from 'sweetalert';
@@ -16,7 +16,6 @@ function MessageBoard(props) {
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({ description: "" })
   const history = useHistory()
-  // const {id} = useParams()
 
   const { currentUser } = props
   const { description } = formData
@@ -28,16 +27,6 @@ function MessageBoard(props) {
     }
     fetchPosts()
   }, [])
-
-  // useEffect(() => {
-  //   const prefillFormData = () => {
-  //     const postDesc = posts.find((post) => post.id === Number(id))
-  //     setFormData({ description: postDesc.description })
-  //   }
-  //   if (posts.length) {
-  //     prefillFormData()
-  //   }
-  // }, [posts, id])
 
   const togglePopup = () => {
     setIsOpen(!isOpen)
