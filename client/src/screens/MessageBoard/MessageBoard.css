@@ -178,3 +178,19 @@
     margin: 0px 0px 120px 0px;
   }
 }
+
+@media screen and (max-width: 1450px) {
+  .message-board-wood-board {
+    background-image: none;
+  }
+
+  .post-container {
+    background-color: darkolivegreen;
+    height: 100px;
+    margin: 0px 0px 30px 0px;
+    padding: 15px;
+    color: bisque;
+    border: solid 2px white;
+    border-radius: 20px;
+  }
+}
