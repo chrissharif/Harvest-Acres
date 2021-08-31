@@ -88,18 +88,18 @@ src
 | Work on Message Board                      |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Make Edit and Delete for Messages          |    H     |      2hrs      |     6hrs      |    6hrs     |
 | Work on Farm Page                          |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Add Crop Counter                           |    H     |      2hrs      |      hrs      |     hrs     |
+| Add Crop Counter                           |    H     |      2hrs      |    0.5hrs     |   0.5hrs    |
 | Add Message Board/Leaderboard to Farm Page |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| CSS Styling                                |    H     |      6hrs      |      hrs      |     hrs     |
-| Media Queries                              |    H     |      1hrs      |      hrs      |     hrs     |
+| CSS Styling                                |    H     |      6hrs      |     8hrs      |    8hrs     |
+| Media Queries                              |    H     |      1hrs      |     1hrs      |    1hrs     |
 | Work on Leaderboard Component              |    M     |      2hrs      |    0.5hrs     |   0.5hrs    |
 | Finish Leaderboard and add Styling         |    M     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| PMVP                                       |    L     |      5hrs      |      hrs      |     hrs     |
-| Finish Up Functionality + Debugging        |    H     |      4hrs      |      hrs      |     hrs     |
+| PMVP                                       |    L     |      5hrs      |     2hrs      |    2hrs     |
+| Finish Up Functionality + Debugging        |    H     |      4hrs      |     4hrs      |    4hrs     |
 | Deployment                                 |    H     |      2hrs      |     1hrs      |    1hrs     |
-| Linting                                    |    H     |      1hrs      |      hrs      |     hrs     |
-| Final Review                               |    H     |      1hrs      |      hrs      |     hrs     |
-| Total                                      |    H     |     46hrs      |      hrs      |     hrs     |
+| Linting                                    |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Final Review                               |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Total                                      |    H     |     46hrs      |    40.5hrs    |   40.5hrs   |
 
 #### PostMVP
 
@@ -150,3 +150,5 @@ This is the code for my Edit Post popup. I was very happy to get the popup worki
   - Had a small syntax error
 - Wasn't able to edit posts
   - Forgot to pass in 'id' through handleUpdate function
+- User would be logged out on window refresh
+  - Just had to add '?' to currentUser property
