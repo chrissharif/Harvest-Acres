@@ -5,7 +5,9 @@
 .farm-username {
   font-size: 40px;
   width: 250px;
-  margin: 25px 0px 50px -210px;
+  left: 30px;
+  top: 30px;
+  position: fixed;
 }
 
 .crop-counter {
@@ -24,10 +26,16 @@
   position: fixed;
   right: 15px;
   top: 15px;
-  background-color: darkolivegreen;
-  color: white;
+  background-color: bisque;
+  color: darkolivegreen;
   font-size: 15px;
   padding: 5px 10px;
+  border: solid 2px white;
+}
+
+.farm-logout:hover {
+  background-color: darkolivegreen;
+  color: bisque;
 }
 
 .message-link {
@@ -35,7 +43,15 @@
   position: absolute;
   right: 100px;
   top: 250px;
+  color: bisque;
+  border: solid 1px white;
+  padding: 2px 3px 0px 3px;
+  border-radius: 5px;
+}
+
+.message-link:hover {
   color: darkolivegreen;
+  background-color: bisque;
 }
 
 .leaderboard-link {
@@ -43,7 +59,15 @@
   position: absolute;
   right: 100px;
   top: 450px;
+  color: bisque;
+  border: solid 1px white;
+  padding: 0px 2px;
+  border-radius: 5px;
+}
+
+.leaderboard-link:hover {
   color: darkolivegreen;
+  background-color: bisque;
 }
 
 .crop-container {
@@ -51,11 +75,29 @@
   background-size: cover;
   width: 825px;
   height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .farm-container {
-  background-color: bisque;
+  background-color: darkolivegreen;
   display: flex;
   justify-content: center;
+  color: bisque;
+}
+
+.coming-soon {
+  font-size: 70px;
+  color: white;
+  text-shadow: -3px 3px black;
+  font-family: Risque;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1250px) {
+  .farm-username {
+    width: 125px;
+  }
 }

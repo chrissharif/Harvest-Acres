@@ -5,7 +5,7 @@ import './MessageBoard.css'
 import HomeIcon from '@material-ui/icons/Home';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Post from '../Post/Post'
-import { Link, useHistory, useParams } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 import EditPost from '../EditPost/EditPost'
 import swal from 'sweetalert';
@@ -16,28 +16,26 @@ function MessageBoard(props) {
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({ description: "" })
   const history = useHistory()
-  // const {id} = useParams()
 
   const { currentUser } = props
   const { description } = formData
 
+  let fourPosts = []
+  let edgeNum = 4
+
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts()
-      setPosts(postList)
+      if (postList.length < 4) {
+        edgeNum = postList.length
+      }
+      for (let i = 0; i < edgeNum; i++) {
+        fourPosts.push(postList[i])
+      }
+      setPosts(fourPosts)
     }
     fetchPosts()
   }, [])
-
-  // useEffect(() => {
-  //   const prefillFormData = () => {
-  //     const postDesc = posts.find((post) => post.id === Number(id))
-  //     setFormData({ description: postDesc.description })
-  //   }
-  //   if (posts.length) {
-  //     prefillFormData()
-  //   }
-  // }, [posts, id])
 
   const togglePopup = () => {
     setIsOpen(!isOpen)
@@ -78,7 +76,7 @@ function MessageBoard(props) {
         <Link className='message-board-home-link' to='/farm'>
           <HomeIcon />
         </Link>
-        <div className ='logged-in'>Logged in as: {currentUser.username} </div>
+        <div className ='logged-in'>Logged in as: {currentUser?.username} </div>
         <div className='message-board-title'>Message Board</div>
         <AddBoxIcon className='new-post-link' onClick={togglePopup} />
         </header>
@@ -98,6 +96,7 @@ function MessageBoard(props) {
                 cols='30'
                 rows='10'
                 type='text'
+                maxLength='100'
                 name='description'
                 autoComplete='off'
                 value={description}
@@ -109,11 +108,12 @@ function MessageBoard(props) {
           <div className='posts'>
             {posts.map((post, index) => (
               <div className='post-container' key={index}>
-                <div>{post.user_id}</div>
+                <div className='message-board-username'>{post.user.username} says:</div>
                 <div>{post.description}</div>
                 {currentUser?.id === post.user_id && (
                   <>
-                    <button onClick={togglePopup}>Edit</button>
+                    <button onClick={() => handleDelete(post.id)} className='edit-and-delete-buttons'>Delete</button>
+                    <button className='edit-and-delete-buttons' onClick={togglePopup}>Edit</button>
                     {isOpen && <EditPost content={<>
                       <form className='message-form' onSubmit={(e) => {
                         e.preventDefault()
@@ -128,6 +128,7 @@ function MessageBoard(props) {
                         rows='10'
                         type='text'
                         name='description'
+                        maxLength='100'
                         autoComplete='off'
                         value={description}
                         onChange={handleChange}
@@ -135,8 +136,7 @@ function MessageBoard(props) {
                       <button className='message-board-button'>Edit Message</button>
                     </form>
                     </>} handleClose={togglePopup} />}
-                    <button onClick={() => handleDelete(post.id)}>Delete</button>
-                </>
+                  </>
                 )}
               </div>
             ))}

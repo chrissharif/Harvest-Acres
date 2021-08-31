@@ -38,12 +38,20 @@
   color: darkolivegreen;
 }
 
+.message-board-home-link:hover {
+  color: bisque;
+}
+
 .new-post-link {
   transform: scale(2.5);
   position: absolute;
   right: 60px;
   top: 50px;
   color: darkolivegreen;
+}
+
+.new-post-link:hover {
+  color: bisque;
 }
 
 .message-board-wood-board {
@@ -61,6 +69,41 @@
 
 .posts {
   margin: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.post-container {
+  font-family: Risque;
+  font-size: 20px;
+  margin: 0px 0px 80px 0px;
+  height: 30px;
+  width: 500px;
+  background-color: #bf894b;
+}
+
+.message-board-username {
+  font-family: Risque;
+  font-size: 24px;
+  color: white;
+  text-shadow: -1.5px 1.5px black;
+}
+
+.edit-and-delete-buttons {
+  background-color: darkolivegreen;
+  float: right;
+  color: bisque;
+  font-family: Risque;
+  margin: 0px 5px;
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.edit-and-delete-buttons:hover {
+  color: darkolivegreen;
+  background-color: bisque;
 }
 
 .popup-box {
@@ -97,12 +140,17 @@
 .message-board-button {
   font-family: Risque;
   background-color: bisque;
-  border: none;
+  border: solid 2px white;
   border-radius: 20px;
   color: black;
   width: 125px;
   font-size: 15px;
   padding: 5px 10px;
+}
+
+.message-board-button:hover {
+  color: bisque;
+  background-color: darkolivegreen;
 }
 
 .message-form-input {
@@ -147,4 +195,39 @@
   color: darkolivegreen;
   font-family: Risque;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  .message-board-wood-board {
+    background-image: none;
+  }
+
+  .post-container {
+    background-color: darkolivegreen;
+    height: auto;
+    margin: 0px 0px 30px 0px;
+    padding: 15px;
+    color: bisque;
+    border: solid 2px white;
+    border-radius: 20px;
+  }
+
+  .edit-and-delete-buttons {
+    background-color: bisque;
+    color: darkolivegreen;
+  }
+
+  .edit-and-delete-buttons:hover {
+    background-color: darkolivegreen;
+    color: bisque;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .message-board-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 50px 0px -50px 0px;
+  }
 }
