@@ -92,6 +92,7 @@ function MessageBoard(props) {
                 cols='30'
                 rows='10'
                 type='text'
+                maxLength='100'
                 name='description'
                 autoComplete='off'
                 value={description}

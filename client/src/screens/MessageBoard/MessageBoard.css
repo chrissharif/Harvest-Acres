@@ -173,13 +173,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 2000px) {
-  .post-container {
-    margin: 0px 0px 120px 0px;
-  }
-}
-
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1150px) {
   .message-board-wood-board {
     background-image: none;
   }
@@ -192,6 +186,11 @@
     color: bisque;
     border: solid 2px white;
     border-radius: 20px;
+  }
+
+  .edit-and-delete-buttons {
+    background-color: bisque;
+    color: darkolivegreen;
   }
 }
 
