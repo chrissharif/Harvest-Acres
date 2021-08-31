@@ -23,7 +23,11 @@ function MessageBoard(props) {
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts()
-      setPosts(postList)
+      for (let i = 0; i < 4; i++) {
+        let fourPosts = []
+        fourPosts.push(postList[i])
+      }
+      setPosts(fourPosts)
     }
     fetchPosts()
   }, [])
