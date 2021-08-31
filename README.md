@@ -116,6 +116,8 @@ src
 
 ## Code Showcase
 
+This is the code for my Edit Post popup. I was very happy to get the popup working and be able to keep everything neat. I also never have used textarea, so this was also a learning moment for me.
+
 ```
 {isOpen && <EditPost content={<>
   <form className='message-form' onSubmit={(e) => {
