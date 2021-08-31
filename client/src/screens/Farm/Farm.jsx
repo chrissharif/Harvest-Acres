@@ -15,7 +15,7 @@ function Farm(props) {
     <div>
       <div className='farm-container'>
       <nav className='farm-nav'>
-        <div className='farm-username'>{currentUser.username}'s Farm</div>
+        <div className='farm-username'>{currentUser?.username}'s Farm</div>
         <div className='crop-counter'>
           <div>Crops:</div>
           <div>0</div>

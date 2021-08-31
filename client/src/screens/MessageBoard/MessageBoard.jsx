@@ -9,12 +9,14 @@ import { Link, useHistory } from 'react-router-dom'
 import { getAllPosts, postPost, putPost, deletePost } from '../../services/posts'
 import EditPost from '../EditPost/EditPost'
 import swal from 'sweetalert';
+import { getAllUsers } from '../../services/users'
 
 function MessageBoard(props) {
 
   const [posts, setPosts] = useState([])
   const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({ description: "" })
+  const [users, setUsers] = useState([])
   const history = useHistory()
 
   const { currentUser } = props
@@ -36,6 +38,14 @@ function MessageBoard(props) {
     }
     fetchPosts()
   }, [])
+
+  // useEffect(() => {
+  //   const fetchUsers = async () => {
+  //     const usersList = await getAllUsers()
+  //     setUsers(usersList)
+  //   }
+  //   fetchUsers()
+  // }, [])
 
   const togglePopup = () => {
     setIsOpen(!isOpen)
@@ -76,7 +86,7 @@ function MessageBoard(props) {
         <Link className='message-board-home-link' to='/farm'>
           <HomeIcon />
         </Link>
-        <div className ='logged-in'>Logged in as: {currentUser.username} </div>
+        <div className ='logged-in'>Logged in as: {currentUser?.username} </div>
         <div className='message-board-title'>Message Board</div>
         <AddBoxIcon className='new-post-link' onClick={togglePopup} />
         </header>
@@ -109,7 +119,7 @@ function MessageBoard(props) {
           <div className='posts'>
             {posts.map((post, index) => (
               <div className='post-container' key={index}>
-                <div>{post.user_id}</div>
+                <div>{post.user.username}</div>
                 <div>{post.description}</div>
                 {currentUser?.id === post.user_id && (
                   <>
