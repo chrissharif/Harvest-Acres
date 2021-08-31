@@ -38,12 +38,20 @@
   color: darkolivegreen;
 }
 
+.message-board-home-link:hover {
+  color: bisque;
+}
+
 .new-post-link {
   transform: scale(2.5);
   position: absolute;
   right: 60px;
   top: 50px;
   color: darkolivegreen;
+}
+
+.new-post-link:hover {
+  color: bisque;
 }
 
 .message-board-wood-board {
@@ -93,6 +101,11 @@
   padding: 2px 10px;
 }
 
+.edit-and-delete-buttons:hover {
+  color: darkolivegreen;
+  background-color: bisque;
+}
+
 .popup-box {
   position: fixed;
   background: #00000050;
@@ -127,12 +140,17 @@
 .message-board-button {
   font-family: Risque;
   background-color: bisque;
-  border: none;
+  border: solid 2px white;
   border-radius: 20px;
   color: black;
   width: 125px;
   font-size: 15px;
   padding: 5px 10px;
+}
+
+.message-board-button:hover {
+  color: bisque;
+  background-color: darkolivegreen;
 }
 
 .message-form-input {
@@ -197,6 +215,11 @@
   .edit-and-delete-buttons {
     background-color: bisque;
     color: darkolivegreen;
+  }
+
+  .edit-and-delete-buttons:hover {
+    background-color: darkolivegreen;
+    color: bisque;
   }
 }
 

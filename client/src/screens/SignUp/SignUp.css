@@ -22,6 +22,10 @@
   animation-timing-function: ease-in-out;
 }
 
+.sign-up-button:hover {
+  color: white;
+}
+
 .sign-up-email {
   margin: -50px 0px 90px 130px;
 }

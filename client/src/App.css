@@ -34,6 +34,11 @@
   animation-timing-function: ease-in-out;
 }
 
+.start-button:hover {
+  color: black;
+  text-shadow: -2px 2px white;
+}
+
 /* Animation made with help from https://codepen.io/MarioDesigns/pen/woJgeo */
 
 @keyframes floating {

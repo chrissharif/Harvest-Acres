@@ -1,3 +1,19 @@
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .sign-in {
   background-image: url("https://static.vecteezy.com/system/resources/previews/002/042/686/non_2x/grazing-cows-on-sunset-vector.jpg");
   background-size: cover;
@@ -55,6 +71,10 @@
   animation-timing-function: ease-in-out;
 }
 
+.form-button:hover {
+  color: white;
+}
+
 .form-link-div {
   font-family: Risque;
   margin: 10px 0px 0px 150px;
@@ -62,6 +82,11 @@
 
 .form-link {
   margin: 0px 0px 0px 15px;
+  color: black;
+}
+
+.form-link:hover {
+  color: white;
 }
 
 @keyframes floating {

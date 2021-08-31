@@ -33,6 +33,11 @@
   border: solid 2px white;
 }
 
+.farm-logout:hover {
+  background-color: darkolivegreen;
+  color: bisque;
+}
+
 .message-link {
   transform: scale(2.5);
   position: absolute;
@@ -44,6 +49,11 @@
   border-radius: 5px;
 }
 
+.message-link:hover {
+  color: darkolivegreen;
+  background-color: bisque;
+}
+
 .leaderboard-link {
   transform: scale(2.5);
   position: absolute;
@@ -53,6 +63,11 @@
   border: solid 1px white;
   padding: 0px 2px;
   border-radius: 5px;
+}
+
+.leaderboard-link:hover {
+  color: darkolivegreen;
+  background-color: bisque;
 }
 
 .crop-container {

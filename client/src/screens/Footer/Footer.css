@@ -29,4 +29,17 @@ a {
 
 .linked-in {
   transform: scale(1.3);
+  color: tomato;
+}
+
+.linked-in:hover {
+  color: mediumpurple;
+}
+
+.github {
+  color: tomato;
+}
+
+.github:hover {
+  color: mediumpurple;
 }
