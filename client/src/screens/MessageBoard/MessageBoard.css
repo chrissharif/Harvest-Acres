@@ -61,6 +61,16 @@
 
 .posts {
   margin: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.post-container {
+  font-family: Risque;
+  font-size: 20px;
+  margin: 0px 0px 80px 0px;
+  width: 400px;
 }
 
 .popup-box {

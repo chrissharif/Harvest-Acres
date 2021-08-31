@@ -20,11 +20,12 @@ function MessageBoard(props) {
   const { currentUser } = props
   const { description } = formData
 
+  let fourPosts = []
+
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts()
       for (let i = 0; i < 4; i++) {
-        let fourPosts = []
         fourPosts.push(postList[i])
       }
       setPosts(fourPosts)
@@ -106,7 +107,8 @@ function MessageBoard(props) {
                 <div>{post.description}</div>
                 {currentUser?.id === post.user_id && (
                   <>
-                    <button onClick={togglePopup}>Edit</button>
+                    <button onClick={() => handleDelete(post.id)} className='edit-and-delete-buttons'>Delete</button>
+                    <button className='edit-and-delete-buttons' onClick={togglePopup}>Edit</button>
                     {isOpen && <EditPost content={<>
                       <form className='message-form' onSubmit={(e) => {
                         e.preventDefault()
@@ -128,8 +130,7 @@ function MessageBoard(props) {
                       <button className='message-board-button'>Edit Message</button>
                     </form>
                     </>} handleClose={togglePopup} />}
-                    <button onClick={() => handleDelete(post.id)}>Delete</button>
-                </>
+                  </>
                 )}
               </div>
             ))}
