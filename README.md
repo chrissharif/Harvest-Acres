@@ -1,6 +1,6 @@
 # Harvest Acres
 
-[Deployed Link](https://eloquent-hopper-712409.netlify.app/)
+https://eloquent-hopper-712409.netlify.app/
 
 ## Project Name
 
